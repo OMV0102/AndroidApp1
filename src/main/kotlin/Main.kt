@@ -8,7 +8,7 @@ fun main() {
     try
     {
         val city_name: String? = readLine()
-        if (city_name == null || city_name.isEmpty())
+        if (city_name.isNullOrEmpty())
             throw error("Вы пропустили ввод города!")
 
         println("Введите текущую температуру для города \"$city_name\":")
@@ -25,7 +25,7 @@ fun main() {
     }
 }
 
-// Толкование по температуре
+// Пояснение погоды
 fun explanation(t: Double): String
 {
     return when (t)
