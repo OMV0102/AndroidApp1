@@ -8,7 +8,7 @@ fun main() {
     try
     {
         val city_name: String? = readLine()
-        if (city_name.isNullOrEmpty())
+        if (city_name.isNullOrBlank()) // не null, не пустое, не пробелы
             throw error("Вы пропустили ввод города!")
 
         println("Введите текущую температуру для города \"$city_name\":")
