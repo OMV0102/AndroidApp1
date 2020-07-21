@@ -16,8 +16,8 @@ fun main() {
 
         val city = City(city_name, city_temp) // Инициализация объекта класса City
 
-        println("Сейчас в городе${city.name}) температура: ${city.temp}°C")
-        explanation(city.temp)
+        println("Сейчас в городе \"${city.name}\" температура: ${city.temp}°C")
+        println(explanation(city.temp))
     }
     catch (error: Exception)
     {
